@@ -86,12 +86,10 @@ Como resultado el video se elimina de la lista
 ![image](https://user-images.githubusercontent.com/31327706/188284926-349eec53-9579-426c-8832-836a7bee4e96.png)
 
 ## Construido con :heart:&:coffee:
-- [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-- [Node.JS](https://nodejs.org/es/)
-- [aws-lambda](https://aws.amazon.com/es/lambda/)
-- [DynamoDB](https://aws.amazon.com/es/dynamodb)
-- [serverless](https://www.serverless.com/framework/docs/getting-started)
-- [Middy](https://middy.js.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [REACT](https://es.reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Formik](https://formik.org/)
 
 
 ## Versionado 📌
