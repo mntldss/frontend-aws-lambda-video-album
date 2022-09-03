@@ -1,46 +1,111 @@
-# Getting Started with Create React App
+# Youtube Video Album
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En el presente repositorio encontraras el frontend del proyecto Youtube Video Album,
+ el cual es a grandes razgos, una aplicacion web hecha en REACT y Typescript , desplegada en Heroku la cual realiza diferentes flujos de Videos, consumiendo YOUTUBE API y su respectivo backend.
 
-## Available Scripts
+ ## Pre-requisitos 📋
+- Tener una copia del proyecto en tu maquina
+- [Node.JS](https://nodejs.org/es/)
 
-In the project directory, you can run:
+## Comenzando 🚀
 
-### `npm start`
+Estas instrucciones te permitirán obtener una copia del proyecto en tu máquina :grin:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instalación 🔧
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+En una terminal pocisionada en el directorio del proyecto, debes ejecutar:
+```
+$ npm install
+```
 
-### `npm test`
+### Despliegue 📦
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+$ npm run start
+```
 
-### `npm run build`
+La aplicacion iniciara por defecto en `http://localhost:3000` en tu navegador web.
+![image](https://user-images.githubusercontent.com/31327706/188284457-1dc2c20c-7fbd-4de9-83a1-318eea7e74ab.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Ejecutando las pruebas ⚙️
+### **Agregar un video**
+Para poder agregar un video, debemos realizar lo siguente:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Se debe ingresar una url de youtube valida `https://www.youtube.com/watch?v=`{ID_VIDEO} `https://youtu.be/`{ID_VIDEO}
+- Presionar boton Añadir
 
-### `npm run eject`
+![image](https://user-images.githubusercontent.com/31327706/188284497-f46134b7-2820-4187-9222-c58ed4bac83b.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+El video agregado se refleja en la lista de videos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://user-images.githubusercontent.com/31327706/188284333-34b49aa3-ecb5-4bf0-9429-6851584fafec.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Al repetir el flujo, el nuevo video se mostrara como el primer elemento en la lista.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/31327706/188284555-2c31a14e-06f9-4223-b9cd-21fa216dcbb3.png)
 
-## Learn More
+### **Mostrar informacion de un video**
+Para poder ver la informacion de un video de la lista, debemos realizar lo siguiente:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Hacer click en el video del cual queramos ver la informacion
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Se desplegara una ventana modal con la informacion.
+
+![image](https://user-images.githubusercontent.com/31327706/188284642-ae974faa-f6ab-4341-a625-7d68e6b87b86.png)
+
+Para cerrar el modal solamente debemos presionar la **X**
+
+![image](https://user-images.githubusercontent.com/31327706/188284672-af16686e-07fe-4b52-8019-6a41801d8f55.png)
+
+### **Ver un video**
+Para ver un video de la lista, debemos realizar lo siguiente:
+
+Una vez desplegada la informacion (**Mostrar informacion de un video**)
+- Hacer click en la imagen y este se abrira.
+
+![image](https://user-images.githubusercontent.com/31327706/188284751-ff6eda24-26c9-412f-9708-43ed86417320.png)
+
+- presionamos boton reproducir
+
+![image](https://user-images.githubusercontent.com/31327706/188284778-fe5c0986-40a5-45da-8355-0545fbce0729.png)
+
+### **Eliminar un video**
+Para eliminar un video de la lista, debemos realizar lo siguiente:
+
+- presionar la **X** ubicada en la esquina superior derecha de cada video de la lista.
+
+![image](https://user-images.githubusercontent.com/31327706/188284878-b0b179fa-3e95-4ec7-95b0-45ff253c7438.png)
+
+- Presionar boton *Eliminar* del modal desplegado
+
+![image](https://user-images.githubusercontent.com/31327706/188284913-869a57c6-c5cd-43ec-9d44-2dc16bf23a52.png)
+
+Como resultado el video se elimina de la lista
+
+![image](https://user-images.githubusercontent.com/31327706/188284926-349eec53-9579-426c-8832-836a7bee4e96.png)
+
+## Construido con :heart:&:coffee:
+- [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [Node.JS](https://nodejs.org/es/)
+- [aws-lambda](https://aws.amazon.com/es/lambda/)
+- [DynamoDB](https://aws.amazon.com/es/dynamodb)
+- [serverless](https://www.serverless.com/framework/docs/getting-started)
+- [Middy](https://middy.js.org/)
+
+
+## Versionado 📌
+
+Por el momento no se encuentra versionado, pero se utilizara [samver](https://samver.org/). Para todas las versiones disponibles.
+
+# Autores ✒️
+
+Roberto Vega - Trabajo Inicial
+
+Roberto Vega - Documentación
+
+También puedes mirar la lista de todos los contribuyentes quiénes han participado en este proyecto.
+
+## Licencia 📄
+
+Este proyecto no se encuentra bajo ninguna Licencia.
